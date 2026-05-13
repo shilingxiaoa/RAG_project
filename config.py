@@ -12,13 +12,13 @@ PERSIST_DIRECTORY = "./chroma_db"
 
 # 对话生成 LLM 配置（DeepSeek API）
 LLM_MODEL = "YOUR_MODEL
-LLM_API_KEY = "YOUR_API_KEY"
+LLM_API_KEY = os.getenv("YOUR_API_KEY")
 LLM_BASE_URL = "YOUR_MODEL_BASE_URL"("https://api.deepseek.com")
 LLM_TIMEOUT = 30.0
 
 # RAGAS 评估 LLM 配置（智谱 GLM 免费模型）
 ZHIPU_MODEL = "glm-4.7-flash"
-ZHIPU_API_KEY = "YOUR_API_KEY"
+ZHIPU_API_KEY = os.genenv("YOUR_API_KEY")
 ZHIPU_BASE_URL = "https://open.bigmodel.cn/api/paas/v4"
 
 # 对话历史限制
